@@ -14,6 +14,14 @@ $(document).keypress(function(){
   }
 
 });
+$(document).click(function(){
+  if(!started){
+    $("#"+"level-title").text("Level "+level);
+    nextSquence();
+    started=true;
+  }
+
+});
 
 
 // to check and working of the click
